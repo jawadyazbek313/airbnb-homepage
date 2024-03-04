@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import theme from './themes/theme'; 
 import './index.css';
-import App from './App';
+import MainLayout from './layout/MainLayout';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <ThemeProvider theme={theme}>
+     <CssBaseline />
+    <MainLayout />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
