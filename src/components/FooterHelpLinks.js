@@ -183,7 +183,7 @@ export default function HelpLinks() {
         }}
         href="#"
       >
-        <LanguageIcon /> English (US)
+         English (US)
       </Link>
       <Link
         sx={{
@@ -195,7 +195,7 @@ export default function HelpLinks() {
         }}
         href="#"
       >
-        <LanguageIcon /> $USD (US)
+        $USD (US)
       </Link>
       <Link
         sx={{
