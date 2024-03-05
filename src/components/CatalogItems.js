@@ -6,16 +6,21 @@ import {
   CardContent,
   CardMedia,
   Grid,
+  IconButton,
   Typography,
 } from "@mui/material";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import StarIcon from '@mui/icons-material/Star';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
 export default function CatalogItems({ data }) {
   var items = [{}, {}, {}, {}];
   function Image() {
     return (
-      <CardMedia
+      
+    <>
+    <CardMedia
         sx={{ borderRadius: "32px" }}
         component="img"
         alt="green iguana"
@@ -24,6 +29,10 @@ export default function CatalogItems({ data }) {
           "https://picsum.photos/" + Math.floor(Math.random() * (80 + 1) + 400)
         }
       />
+      <IconButton sx={{ color:'white', position:"absolute", left:'85%', top:'2%' }}> 
+       
+      <FavoriteBorderIcon sx={{ width:'32px',height:'32px' }}/></IconButton>
+      </>
     );
   }
   return (
