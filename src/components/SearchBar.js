@@ -6,10 +6,14 @@ export default function SearchBar() {
     <>
       <Grid marginTop={"10px"} container spacing={2}>
         <Grid xs={2}> </Grid>
-        <Grid xs={8}>
+        <Grid xs={8} sx={{ display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center', }}>
           <Paper
+          
             elevation={0}
             sx={{
+              maxWidth:'850px',
               boxShadow: "6",
               height: "66px",
               border: 1,
@@ -20,7 +24,7 @@ export default function SearchBar() {
               justifyContent: "center",
             }}
           >
-            <Grid container>
+            <Grid maxWidth={'850px'} container>
               <Grid marginLeft={4} xs={3}>
                 <TextField
                   margin="dense"
@@ -69,7 +73,7 @@ export default function SearchBar() {
                 />
               </Grid>
               <Divider orientation="vertical" variant="middle" flexItem />
-              <Grid marginLeft={4} xs={3}>
+              <Grid marginLeft={2} xs={3}>
                 <TextField
                   margin="dense"
                   focused
@@ -84,7 +88,7 @@ export default function SearchBar() {
                   }}
                 />
               </Grid>
-              <IconButton>
+              <IconButton size="large" sx={{ marginTop:1, alignItems:'center',justifyContent:'center', height:'100%' }}>
                 <SearchIcon />
               </IconButton>
             </Grid>
@@ -92,7 +96,7 @@ export default function SearchBar() {
         </Grid>
         <Grid xs={2}> </Grid>
       </Grid>
-      <Divider component="li" />
+      <Divider sx={{ marginTop:"32px" }}  />
     </>
   );
 }

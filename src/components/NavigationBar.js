@@ -45,8 +45,8 @@ export default function NavigationBar() {
     };
   
   return (
-    <AppBar position="sticky" sx={{boxShadow:'none',borderStyle:'none',border:0, height:"80px", paddingLeft:'40px',paddingRight:'40px',backgroundColor:'white' }}>
-      <Container sx={{ borderStyle:'none',border:0, }}>
+    <AppBar  position="sticky" sx={{display: { xs: 'none', md: 'flex' },boxShadow:'none',borderStyle:'none',border:0, height:"80px", paddingLeft:'40px',paddingRight:'40px',backgroundColor:'white' }}>
+      <Container maxWidth={'100%'} sx={{ borderStyle:'none',border:0, }}>
         <Toolbar sx={{ borderStyle:'none',border:0, }} disableGutters>
           <AdbIcon color='action' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography

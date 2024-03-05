@@ -22,7 +22,7 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif',
     button: {
-    borderRadius:'30px',
+    
     
     textTransform: 'capitalize'
     }
