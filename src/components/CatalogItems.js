@@ -55,7 +55,7 @@ export default function CatalogItems({ data }) {
                 </Grid>
                 </Grid>
                
-                <Typography gutterBottom variant="body1"  margin={0} component="div">
+                <Typography gutterBottom variant="body2"  margin={0} color="text.secondary"component="div">
                 {value.rental_name}
                 </Typography>
                
@@ -64,7 +64,7 @@ export default function CatalogItems({ data }) {
                 {value.date_available} Nights 
                 </Typography>
                 
-                <Typography sx={{ fontWeight:'bold',textDecoration:'underline' }} variant="body2" color="text.secondary">
+                <Typography sx={{ fontWeight:'bold',textDecoration:'underline' }} variant="body2" >
                 {value.price_per_night}$ total before taxes
                 </Typography>
 
